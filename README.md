@@ -1,14 +1,16 @@
-# Genomics Data Analysis
-This project focuses on analyzing mutations and their effects on protein sequences using Python.
+# Genomics Data Analysis 🔬🧬
 
-## Features
-- Mutation analysis of genomic sequences
-- Protein structure impact prediction
-- Data visualization for biological insights
+## 🔹 Project Overview  
+This project focuses on **analyzing mutations** and their effects on **protein sequences** using Python and Biopython.
 
-## Installation
+## 🚀 Features  
+✔️ Mutation analysis of genomic sequences  
+✔️ Protein structure impact prediction  
+✔️ Data visualization for biological insights (Coming soon!)
+
+## 🛠 Installation Guide  
 ```bash
 git clone https://github.com/kjkjdhy/Genomics-Data-Analysis.git
 cd Genomics-Data-Analysis
 pip install -r requirements.txt
-python analysis.py
+python mutation_analysis.py
