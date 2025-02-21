@@ -1,10 +1,13 @@
 from Bio.Seq import Seq
 
 # Define Original DNA Sequence
-original_dna = Seq("ATGCGTACGTAGCTAGCTAGCGATCGTACGATCGTAGCTAGCTAGTACG")
+original_dna = Seq("ATGCGTACGTAGCTAGCTAGCGATCGTACGATCGTAGCTAGCTAGTAC")
 
-# Ensure the sequence length is a multiple of 3
-trimmed_dna = original_dna[: len(original_dna) - (len(original_dna) % 3)]
+# Ensure the sequence length is a multiple of 3 before translation
+if len(original_dna) % 3 != 0:
+    trimmed_dna = original_dna[: -(len(original_dna) % 3)]  # Trim extra bases
+else:
+    trimmed_dna = original_dna
 
 # Introduce a Mutation (Change 'T' to 'A' at position 10)
 mutated_dna = trimmed_dna[:10] + "A" + trimmed_dna[11:]
